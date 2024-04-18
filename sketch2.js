@@ -14,6 +14,10 @@ function setup() {
 }
 
 function draw() {
+  stroke(255, 60, 0)
+  strokeWeight(4)
+  line(mouseX, mouseY, pmouseX, pmouseY)
+
     background(30, 30, 32, 10)
     strokeWeight(2)
 

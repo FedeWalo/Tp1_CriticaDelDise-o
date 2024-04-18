@@ -17,15 +17,23 @@ function setup() {
   textFont(font)
 }
 
+let i = 10
 function draw() {
+  background(255, 60, 0, 0.2)
   strokeWeight(0)
-  text('Federico Walovnik', windowWidth / 2, windowHeight/2)
+  text('Federico Walovnik', windowWidth / 2, i)
   
   stroke(30, 30, 32)
   strokeWeight(4)
   line(mouseX, mouseY, pmouseX, pmouseY)
 
   background(255, 60, 0, 10)
+
+  if (i > windowHeight) {
+    i = 10
+  } else {
+    i = i + 3
+  }
 }
 
 const checkIfHitsWall = () => {

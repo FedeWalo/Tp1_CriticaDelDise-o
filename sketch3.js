@@ -22,6 +22,10 @@ function setup() {
 }
 
 function draw() {
+    stroke(255, 60, 0)
+    strokeWeight(4)
+    line(mouseX, mouseY, pmouseX, pmouseY)
+    
     strokeWeight(0)
     fill(255, 60, 0)
     textSize(30)

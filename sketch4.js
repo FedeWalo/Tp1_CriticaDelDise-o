@@ -7,6 +7,10 @@ function setup() {
 }
 
 function draw() {
+    stroke(255, 60, 0)
+    strokeWeight(4)
+    line(mouseX, mouseY, pmouseX, pmouseY)
+    
     background(30, 30, 32, 10)
     translate(width / 2, height / 2)
     stroke(255, 60, 0)
