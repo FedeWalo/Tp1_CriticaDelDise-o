@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+canvas {
+  display: block;
+}
+
+.nav {
+  background-color: #FF3D00;
+  display: flex;
+  justify-content: end;
+  padding: 1rem 4rem;
+}
+
+.nextPage {
+  color: #1E1E20;
+}
+
+.navPages {
+  background-color: #1E1E20;
+  
+  display: flex;
+  padding: 1rem 4rem;
+  justify-content: space-between;
+}
+
+.navPages a{
+  color: #FF3D00;
+}
